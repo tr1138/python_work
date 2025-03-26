@@ -1,0 +1,4 @@
+In Python you can store data in variables.
+In Python you can group variables together in a list.
+In Python you can iterate through a list and perform actions on each item in the list.
+In Python you can perform actions based on a conditional using if statements.
