@@ -22,12 +22,13 @@ def get_new_userinfo(path):
     return userinfo
 
 def check_user_name(userinfo):
-    """Checks if the user has changed."""
+    """Checks if the user has changed. Returns userinfo unmodified if not.
+    Returns None if so."""
     while True:
-        previous_user = input(f'Hello, are you {userinfo['name']}? y/n? ')
-        if previous_user == 'y':
+        same_user = input(f'Hello, are you {userinfo['name']}? y/n? ')
+        if same_user == 'y':
             return userinfo
-        elif previous_user == 'n':
+        elif same_user == 'n':
             return None
         print("Please respond with 'y' or 'n'.")
 
