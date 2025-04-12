@@ -10,7 +10,8 @@ def print_text_file(filename):
     else:
         print(contents)
 
-files = ['cats.txt', 'dogs.txt']
+files = ['Chapter_10_Files_and_exceptions/cats.txt', 
+         'Chapter_10_Files_and_exceptions/dogs.txt']
 for file in files:
     print_text_file(file)
     print()
